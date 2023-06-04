@@ -32,15 +32,16 @@ function Contact() {
 
   return (
     <section className="mx-0 lg:mx-8 bg-black text-white">
-    <div className={alertt ? "alert flex justify-between fixed top-26 right-1 z-[999] max-w-sm alert-success shadow-lg" : "hidden"}>
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <span>Message sent successfully!</span>
-      </div>
-      <p onClick={() => { setalert(false) }} className="cursor-pointer">close</p>
-    </div>
+    <div className={alertt ? "alert flex justify-center items-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[999] max-w-sm alert-success shadow-lg" : "hidden"}>
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <span>Message sent successfully!</span>
+  </div>
+  <p onClick={() => { setalert(false) }} className="cursor-pointer">close</p>
+</div>
+
     <div className={loading && "w-16 fixed top-[50%] left-[50%] h-16 border-4 border-dashed rounded-full border-orange animate-spin dark:border-orange"}></div>
   
     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
