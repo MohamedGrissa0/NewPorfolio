@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function About() {
   const [text, setText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const words = ['Mern Stack Developer', 'I can Develop cool websites'];
+  const words = ['MERN Stack Developer', 'I can Develop cool websites'];
 
   useEffect(() => {
     const timeout = setTimeout(handleTyping, 200);

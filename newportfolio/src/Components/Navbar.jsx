@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className=' 	p-5'>
      <div className="text-white flex flex-row bg-black justify-between"> <div>
-            <h1 className='text-xl'>M.Grissa</h1>
+            <a href='/'><h1 className='text-xl'>M.Grissa</h1></a>
         </div>
         <div>
         <i onClick={() => set(!is)} className="fa-solid fa-bars text-xl"></i>
@@ -21,6 +21,10 @@ function Navbar() {
           </a><a href="/contact">
             <h1 className='text-8xl m-6'>Contact Me</h1>
           </a>
+          <div className='ml-3 mb-3 absolute bottom-0 left-0 flex flex-col'>
+               <a className='text-2xl' href='https://www.linkedin.com/in/mohamed-grissa/'> <i class="fa-brands fa-linkedin text-2xl"></i> Linkedin</a>
+            
+          </div>
         </div>
          }
     </div>
